@@ -40,9 +40,9 @@ class Config(object):
 
     # OPTIONAL
     ##List of id's -  (not usernames) for users which have sudo access to the bot.
-    DRAGONS = get_user_list("elevated_users.json", "6091170475")
+    DRAGONS = get_user_list("elevated_users.json", "")
     ##List of id's - (not usernames) for developers who will have the same perms as the owner
-    DEV_USERS = get_user_list("elevated_users.json", "1045939902")
+    DEV_USERS = get_user_list("elevated_users.json", "6091170475")
     ##List of id's (not usernames) for users which are allowed to gban, but can also be banned.
     DEMONS = get_user_list("elevated_users.json", "778393824")
     # List of id's (not usernames) for users which WONT be banned/kicked by the bot.
