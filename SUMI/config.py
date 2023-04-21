@@ -40,11 +40,11 @@ class Config(object):
 
     # OPTIONAL
     ##List of id's -  (not usernames) for users which have sudo access to the bot.
-    DRAGONS = get_user_list("elevated_users.json", "6091170475,778393824")
+    DRAGONS = get_user_list("elevated_users.json", "6091170475")
     ##List of id's - (not usernames) for developers who will have the same perms as the owner
     DEV_USERS = get_user_list("elevated_users.json", "1045939902")
     ##List of id's (not usernames) for users which are allowed to gban, but can also be banned.
-    DEMONS = get_user_list("elevated_users.json", "supports")
+    DEMONS = get_user_list("elevated_users.json", "778393824")
     # List of id's (not usernames) for users which WONT be banned/kicked by the bot.
     TIGERS = get_user_list("elevated_users.json", "tigers")
     WOLVES = get_user_list("elevated_users.json", "whitelists")
@@ -93,7 +93,7 @@ class Config(object):
     BOT_USERNAME = "TheVermeil_Bot"  # Your bot username without @.
     BOT_NAME = "vermeil"  # Your bot Name.
     REDIS_URL = ""  # Paste your redis url in format redis://<username of admin role>:<password of admin role>@<endoint url>/<database name>. YOU CAN SKIP THIS IF YOU DONT HAVE ONE
-    ARQ_API_KEY = ""  # For Some Modules. Get it from @ArqRobot
+    ARQ_API_KEY = "TLFDRI-BZXGIF-OHRTFM-OIPCWD-ARQ"  # For Some Modules. Get it from @ArqRobot
 
 
 # Damn, it was tough for me to rewrite this whole, please don't remove the credits from the code, i did too much hardwork for this
