@@ -13,10 +13,10 @@ class Config(object):
     # REQUIRED
     # Login to https://my.telegram.org and fill in these slots with the details given by it
 
-    API_ID = "awoo"  # integer value, dont use ""
-    API_HASH = "awoo"
+    API_ID = "16743442"  # integer value, dont use ""
+    API_HASH = "12bbd720f4097ba7713c5e40a11dfd2a"
     TOKEN = (
-        "awoo"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
+        "5481492613:AAGEoed5DnY2AtZ86nVLaev59Ty8cMa3fB4"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
     )
     OWNER_ID = 5885920877  # If you dont know, run the bot and do /id in your private chat with it, also an integer
     OWNER_USERNAME = "MH17_KUNAL"
@@ -29,20 +29,20 @@ class Config(object):
     )  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
 
     # RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = "something://somewhat:user@hosturl:port/databasename"  # needed for any database modules
+    SQLALCHEMY_DATABASE_URI = "postgres://brmhwhgf:Eq_ZuGoNei_j50ST1iGf7WMymc6IO9vf@hattie.db.elephantsql.com/brmhwhgf"  # needed for any database modules
     LOAD = []
     NO_LOAD = ["rss", "cleaner", "connection", "math"]
     WEBHOOK = False
     INFOPIC = True
     URL = None
-    SPAMWATCH_API = ""  # go to support.spamwat.ch to get key
+    SPAMWATCH_API = "YvmbZdX4td1WgKSEun9yG7qVl1WVB9it8hVIyoFEHYFBaTrESPWTIFvyEiF8Esj~"  # go to support.spamwat.ch to get key
     SPAMWATCH_SUPPORT_CHAT = "@SpamWatchSupport"
 
     # OPTIONAL
     ##List of id's -  (not usernames) for users which have sudo access to the bot.
-    DRAGONS = get_user_list("elevated_users.json", "sudos")
+    DRAGONS = get_user_list("elevated_users.json", "6091170475,778393824")
     ##List of id's - (not usernames) for developers who will have the same perms as the owner
-    DEV_USERS = get_user_list("elevated_users.json", "devs")
+    DEV_USERS = get_user_list("elevated_users.json", "1045939902")
     ##List of id's (not usernames) for users which are allowed to gban, but can also be banned.
     DEMONS = get_user_list("elevated_users.json", "supports")
     # List of id's (not usernames) for users which WONT be banned/kicked by the bot.
@@ -69,29 +69,29 @@ class Config(object):
     BL_CHATS = []  # List of groups that you want blacklisted.
     SPAMMERS = None
     SUMI_STATS_PIC = (
-        ""  # Paste link of your image which will be shown when you send /stats
+        "https://graph.org/file/5ef00f4ce1f0158919522.jpg"  # Paste link of your image which will be shown when you send /stats
     )
-    SUMI_WELCOME = ""  # Paste link of your image which will be shown when someone adds the bot to group
-    SUMI_DIS_WEL = ""  # Paste link of your image which will be shown to welcome dragons and dev Disasters when they join a group
-    SUMI_OWNER_WEL_IMG = ""  # Paste link of your image which will be shown to welcome the owner in the group when he joins
+    SUMI_WELCOME = "https://graph.org/file/5ef00f4ce1f0158919522.jpg"  # Paste link of your image which will be shown when someone adds the bot to group
+    SUMI_DIS_WEL = "https://graph.org/file/5ef00f4ce1f0158919522.jpg"  # Paste link of your image which will be shown to welcome dragons and dev Disasters when they join a group
+    SUMI_OWNER_WEL_IMG = "https://graph.org/file/5ef00f4ce1f0158919522.jpg"  # Paste link of your image which will be shown to welcome the owner in the group when he joins
     SUMI_DISPACHER_PIC = (
-        ""  # Paste link of your image which will be shown when you deploy your bot
+        "https://graph.org/file/5ef00f4ce1f0158919522.jpg"  # Paste link of your image which will be shown when you deploy your bot
     )
-    SUMI_HELP_PIC = ""  # Paste link of your image which will be shown
-    PM_IMAGE = ""  # Paste link of your image which will be shown in the pm start when you send /start in bot's pm
-    GROUPSTART_VID = ""  # Paste link of your video or gif which will be shown when you send /start in groups
+    SUMI_HELP_PIC = "https://graph.org/file/5ef00f4ce1f0158919522.jpg"  # Paste link of your image which will be shown
+    PM_IMAGE = "https://graph.org/file/5ef00f4ce1f0158919522.jpg"  # Paste link of your image which will be shown in the pm start when you send /start in bot's pm
+    GROUPSTART_VID = "https://graph.org/file/5ef00f4ce1f0158919522.jpg"  # Paste link of your video or gif which will be shown when you send /start in groups
     GROUP_ALIVE_PIC = (
-        ""  # Paste link of your image which will be shown when you send /alive.
+        "https://graph.org/file/5ef00f4ce1f0158919522.jpg"  # Paste link of your image which will be shown when you send /alive.
     )
     AFKVID = (
-        ""  # Paste link of your video or gif which will be shown when someone goes afk
+        "https://graph.org/file/0d367a9e7d8d55bd6d41e.mp4"  # Paste link of your video or gif which will be shown when someone goes afk
     )
-    NETWORK_NAME = ""  # Your Network or Community username(without @). IF YOU DONT HAVE ONE, SKIP THIS FIELD
+    NETWORK_NAME = "campusbot"  # Your Network or Community username(without @). IF YOU DONT HAVE ONE, SKIP THIS FIELD
     NETWORK_USERNAME = (
-        ""  # Your Network or Community name. IF YOU DONT HAVE ONE, SKIP THIS FIELD.
+        "Campus_Bot_Updates"  # Your Network or Community name. IF YOU DONT HAVE ONE, SKIP THIS FIELD.
     )
-    BOT_USERNAME = ""  # Your bot username without @.
-    BOT_NAME = ""  # Your bot Name.
+    BOT_USERNAME = "TheVermeil_Bot"  # Your bot username without @.
+    BOT_NAME = "vermeil"  # Your bot Name.
     REDIS_URL = ""  # Paste your redis url in format redis://<username of admin role>:<password of admin role>@<endoint url>/<database name>. YOU CAN SKIP THIS IF YOU DONT HAVE ONE
     ARQ_API_KEY = ""  # For Some Modules. Get it from @ArqRobot
 
